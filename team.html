@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Meet the Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white font-sans" style="background-image: url('images/Hero2.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+  <!-- ✅ Navbar -->
+  <nav class="fixed top-0 left-0 w-full bg-transparent z-50">
+  <div class="px-8 py-1 flex justify-between items-center backdrop-blur-md bg-black/40">
+    
+    <!-- 🔰 Logo + Title -->
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="flex items-center gap-3 text-white" style="text-decoration: none;">
+        <img src="images/Logo1.png" alt="Twelve Studio Logo" class="h-14 w-14 object-contain" />
+        <h1 class="text-2xl font-bold" style="font-family: 'JetBrains Mono', monospace;">
+          CIPHER EXPLORER
+        </h1>
+      </a>
+    </div>
+
+    <!-- 🔗 Navbar Links -->
+    <div class="space-x-6 px-6 text-white text-sm md:text-base font-medium navbar-links">
+      <a href="team.html" class="hover:text-[#6b21a8] hover:scale-105 hover:font-bold transform transition duration-200 px-4">Team</a>
+      <a href="caesar.html" class="hover:text-[#6b21a8] hover:scale-105 hover:font-bold transform transition duration-200 px-4">Caesar</a>
+      <a href="rsa.html" class="hover:text-[#6b21a8] hover:scale-105 hover:font-bold transform transition duration-200 px-4">RSA</a>
+    </div>
+
+  </div>
+</nav>
+
+<div id="page-transition" class="fade-slide-down">
+  <!-- ✅ Team Section -->
+  <section class="pt-32 pb-20 px-6 text-center">
+    <h2 class="text-4xl font-bold mb-12" style="font-family: 'JetBrains Mono', monospace;">Meet the Team</h2>
+    
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
+      <!-- Member -->
+      <div class="backdrop-blur-lg rounded-lg p-6 border border-white/10 glow-card">
+  <img src="images/member1.png" alt="Team Member" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+  <h3 class="text-xl font-bold text-white">Te Henglay</h3>
+  <p class="text-sm text-gray-300">Team Lead</p>
+</div>
+
+      <!-- Add more members below -->
+      <div class="backdrop-blur-lg rounded-lg p-6 border border-white/10 glow-card">
+  <img src="images/member2.png" alt="Team Member" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+  <h3 class="text-xl font-bold text-white">Tang Kavtheng</h3>
+  <p class="text-sm text-gray-300">Member</p>
+</div>
+
+      <!-- Example member -->
+      <div class="backdrop-blur-lg rounded-lg p-6 border border-white/10 glow-card">
+  <img src="images/member3.png" alt="Team Member" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+  <h3 class="text-xl font-bold text-white">Taing Chongyean</h3>
+  <p class="text-sm text-gray-300">Member</p>
+</div>
+
+      <div class="backdrop-blur-lg rounded-lg p-6 border border-white/10 glow-card">
+  <img src="images/member4.png" alt="Team Member" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+  <h3 class="text-xl font-bold text-white">Keth Norakdareach</h3>
+  <p class="text-sm text-gray-300">Member</p>
+</div>
+
+      <div class="backdrop-blur-lg rounded-lg p-6 border border-white/10 glow-card">
+  <img src="images/member5.png" alt="Team Member" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+  <h3 class="text-xl font-bold text-white">Chhoy Chhorlisa</h3>
+  <p class="text-sm text-gray-300">Member</p>
+</div>
+
+      <div class="backdrop-blur-lg rounded-lg p-6 border border-white/10 glow-card">
+  <img src="images/member6.png" alt="Team Member" class="w-32 h-32 mx-auto rounded-full mb-4 object-cover">
+  <h3 class="text-xl font-bold text-white">Dina Pisethi</h3>
+  <p class="text-sm text-gray-300">Member</p>
+</div>
+
+  </section>
+
+  <!-- ✅ Footer -->
+  <footer class="bg-black text-white px-6 py-8 mt-18">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 gap-10 text-center">
+
+   <div class="flex flex-col items-center justify-center gap-4">
+  
+  <!-- Horizontal logo row -->
+ <div class="flex items-center justify-center gap-4">
+  <img src="images/Logo1.png" alt="Twelve Studio Logo" class="h-40 w-auto m-4 object-contain">
+  <img src="images/logo.png" alt="Twelve Studio Logo" class="h-40 w-auto object-contain">
+</div>
+
+
+  <!-- Description below logos -->
+  <p class="text-sm text-gray-400 max-w-xs mb-10 text-center">
+    Twelve Studio: Creative design, visual storytelling, and encryption interfaces for the modern web.
+  </p>
+</div>
+  </div>
+
+  <!-- 🌐 Social Icons -->
+  <!-- 🖋 Watermark -->
+  <div class="mt-6 text-xs text-center text-gray-600">
+    © 2025 <span class="font-semibold">HENGlAY</span>. All rights reserved.
+  </div>
+</footer>
+</div>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.getElementById('page-transition').classList.add('loaded');
+  });
+</script>
+</body>
+</html>

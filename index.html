@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cipher Explorer | ITE M1</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <script src="script.js" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+
+<body class="bg-black text-white">
+    <!-- Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full bg-transparent z-50">
+  <div class="px-8 py-1 flex justify-between items-center backdrop-blur-md bg-black/40">
+    
+    <!-- 🔰 Logo + Title -->
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="flex items-center gap-3 text-white" style="text-decoration: none;">
+        <img src="images/Logo1.png" alt="Twelve Studio Logo" class="h-14 w-14 object-contain" />
+        <h1 class="text-2xl font-bold" style="font-family: 'JetBrains Mono', monospace;">
+          CIPHER EXPLORER
+        </h1>
+      </a>
+    </div>
+
+    <!-- 🔗 Navbar Links -->
+    <div class="space-x-6 px-6 text-white text-sm md:text-base font-medium navbar-links">
+      <a href="team.html" class="hover:text-[#6b21a8] hover:scale-105 hover:font-bold transform transition duration-200 px-4">Team</a>
+      <a href="caesar.html" class="hover:text-[#6b21a8] hover:scale-105 hover:font-bold transform transition duration-200 px-4">Caesar</a>
+      <a href="rsa.html" class="hover:text-[#6b21a8] hover:scale-105 hover:font-bold transform transition duration-200 px-4">RSA</a>
+    </div>
+
+  </div>
+</nav>
+
+<div id="page-transition" class="page-transition pt-24">
+<!-- ✅ Hero Section with Background Image -->
+<section class="h-screen bg-cover bg-center flex flex-col justify-center items-center text-white text-center"
+         style="background-image: url('images/hero.png');">
+  <div class="bg-black bg-opacity-0 p-1 rounded-xl mt-[-60px] px-8 py-6">
+   <h1 class="text-4xl md:text-5xl font-bold mb-4 " style="font-family: 'JetBrains Mono', monospace;">
+  Hello, Welcome To
+</h1>
+
+<h1 class="text-3xl md:text-6xl font-semibold p-6 glow-text" style="font-family: 'JetBrains Mono', monospace;">
+  ENCRYPTION AND DECRYPTION DEMO
+</h1>
+
+<h2 class="text-2xl p-8 ">Develop by Twelve Studio 
+  <br>
+  ITE G10 M1 Group 3
+</h2>
+    <!-- View Document Button -->
+    <a href="#document"
+       class="mb-6 mt-24 inline-block px-8 py-4 border-2 border-[#6b21a8] text-white bg-black rounded-lg hover:bg-[#6b21a8] transition"
+       style="font-family: 'JetBrains Mono', monospace;">
+      View Document
+    </a>
+
+    <!-- Caesar and RSA Buttons -->
+    <div class="flex gap-4 justify-center mt-4">
+      <a href="team.html"
+         class="px-8 py-4 border-2 border-[#6b21a8] text-white bg-black rounded-lg hover:bg-[#6b21a8] transition"
+         style="font-family: 'JetBrains Mono', monospace;">
+        Team
+      </a>
+      <a href="caesar.html"
+         class="px-8 py-4 border-2 border-[#6b21a8] text-white bg-black rounded-lg hover:bg-[#6b21a8] transition"
+         style="font-family: 'JetBrains Mono', monospace;">
+         Caesar
+      </a>
+      <a href="rsa.html"
+         class="px-8 py-4 border-2 border-[#6b21a8] text-white bg-black rounded-lg hover:bg-[#6b21a8] transition"
+         style="font-family: 'JetBrains Mono', monospace;">
+        RSA
+      </a>
+      
+    </div>
+  </div>
+</section>
+</div>
+
+
+<!-- 📄 Documentation Section -->
+<section id="document" class="bg-black text-white px-6 py-16 mt-8">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold mb-2" style="font-family: 'JetBrains Mono', monospace;">
+  Documentation
+</h2>
+<div class="w-68 h-1 bg-[#6b21a8] mb-8 mt-6"></div>
+
+    <!-- What is Encryption & Decryption -->
+    <div class="mb-10">
+  <h3 class="text-2xl font-semibold mb-4" style="font-family: 'JetBrains Mono', monospace;">
+    What is Encryption and Decryption?
+  </h3>
+
+  <!-- Paragraph for Encryption -->
+  <p class="text-lg leading-relaxed mb-6">
+    <strong class="text-blue-400">Encryption</strong> is the process of converting readable data (called plaintext) into unreadable code (called ciphertext) so that unauthorized people can’t read it.
+    It protects your data from hackers, spies, or anyone who shouldn’t see it.
+  </p>
+
+  <!-- ✅ Example Box -->
+  <div class="bg-gray-900 text-white p-6 rounded-lg mt-6 shadow-md">
+    <p class="text-xl font-semibold mb-4">
+      <span class="underline">Example:</span>
+    </p>
+
+    <p class="mb-3">Imagine you want to send the message:</p>
+    <pre class="bg-gray-800 text-white px-4 py-2 rounded inline-block mb-4">"HELLO"</pre>
+
+    <p class="mb-3">But you don’t want anyone to read it except your friend.</p>
+
+    <p class="mb-3">
+      So you <strong class="text-blue-400">encrypt</strong> it using a secret method (for example, Caesar cipher shift by 3):
+    </p>
+
+    <ul class="list-disc list-inside mb-4">
+      <li>H → K</li>
+      <li>E → H</li>
+      <li>L → O</li>
+      <li>L → O</li>
+      <li>O → R</li>
+    </ul>
+
+    <p class="mb-1">Now the encrypted message is:</p>
+    <pre class="bg-gray-800 text-white px-4 py-2 rounded inline-block">"KHOOR"</pre>
+  </div>
+
+  <!-- Paragraph for Decryption -->
+  <p class="text-lg leading-relaxed mt-6">
+    <strong class="text-blue-400">Decryption</strong> is the reverse process: turning the ciphertext back into the original readable message (plaintext) using a key.
+    
+    Only someone with the correct key can decrypt and read the original message.
+  </p>
+</div>
+
+<div class="w-68 h-1 bg-[#6b21a8] mb-8 mt-6"></div>
+    <!-- What is Caesar Cipher -->
+    <div class="mb-10">
+      <h3 class="text-2xl font-semibold mb-4" style="font-family: 'JetBrains Mono', monospace;">
+        What is Caesar Cipher?
+      </h3>
+     <p class="text-lg leading-relaxed">
+  <strong class="text-blue-400">The Caesar Cipher</strong> is a substitution encryption technique where each letter in the plaintext is shifted a certain number of places down the alphabet.
+  <br><br>
+  For example, with a shift of 3, <code>A</code> becomes <code>D</code>, <code>B</code> becomes <code>E</code>, and so on. It's simple, fast, but easy to break.
+</p>
+
+<!-- 📜 How It Works -->
+<div class="mt-6">
+  <p class="text-lg font-semibold mb-4">📜 <span class="underline">How It Works:</span></p>
+
+  <ol class="list-decimal list-inside space-y-2 text-base">
+    <li>Choose a <strong>shift key</strong> (e.g., 3)</li>
+    <li>Shift each letter <strong>forward</strong> in the alphabet by that number</li>
+    <li>Letters wrap around from Z to A</li>
+  </ol>
+
+  <!-- 🧠 Note -->
+  <div class="bg-gray-900 text-white mt-4 px-4 py-3 rounded border-l-4 border-[#6b21a8] text-sm mb-8">
+    It's called the <em>Caesar</em> cipher because it was used by <strong>Julius Caesar</strong> to protect his military messages.
+  </div>
+</div>
+    <!-- 🔐 What is RSA Cipher -->
+<div class="mb-10">
+  <h3 class="text-2xl font-semibold mb-4 flex items-center gap-2" style="font-family: 'JetBrains Mono', monospace;">
+     What is RSA Cipher?
+  </h3>
+  <p class="text-lg leading-relaxed mb-3">
+    <strong>RSA</strong> is a <strong>public-key (asymmetric)</strong> encryption algorithm.
+    <br>
+    It uses <strong>two keys</strong>:
+  </p>
+  <ul class="list-disc list-inside text-lg mb-4">
+    <li><strong>A public key</strong> to encrypt</li>
+    <li><strong>A private key</strong> to decrypt</li>
+  </ul>
+  <p class="text-lg leading-relaxed">
+    Unlike Caesar Cipher, RSA doesn’t rely on shifting letters — it uses <strong>math and prime numbers</strong> for secure communication.
+  </p>
+</div>
+
+<hr class="border-gray-700 my-8">
+
+<!-- 🧠 Why is it called RSA -->
+<div class="mb-10">
+  <h3 class="text-lg font-semibold mb-3 flex items-center gap-2" style="font-family: 'JetBrains Mono', monospace;">
+    🧠 Why is it called “RSA”?
+  </h3>
+  <p class="text-base leading-relaxed mb-2">
+    It’s named after its inventors:
+  </p>
+  <ul class="list-disc list-inside text-base mb-3">
+    <li><strong>Rivest</strong></li>
+    <li><strong>Shamir</strong></li>
+    <li><strong>Adleman</strong></li>
+  </ul>
+  <p class="text-base leading-relaxed">They created RSA in 1977.</p>
+</div>
+<!-- ✅ Example (Simplified) -->
+<div class="bg-gray-900 text-white p-6 rounded-lg mt-10 shadow-md">
+  <p class="text-lg font-semibold mb-4">✅ <span class="underline">Example (Simplified)</span></p>
+
+  <p class="mb-3">Let’s encrypt the number <strong>7</strong> using:</p>
+  <ul class="list-disc list-inside mb-4">
+    <li><strong>Public Key</strong> (e = 3, n = 33)</li>
+    <li><strong>Private Key</strong> (d = 7, n = 33)</li>
+  </ul>
+
+  <!-- Encryption -->
+  <p class="font-semibold mb-2">🔐 <span class="text-yellow-400">Encryption:</span></p>
+  <p class="italic text-right text-lg mb-2">ciphertext = (7<sup>3</sup>) % 33</p>
+  <p class="mb-4">You send <code class="bg-gray-800 px-2 py-1 rounded">13</code>.</p>
+
+  <!-- Decryption -->
+  <p class="font-semibold mb-2">🔓 <span class="text-green-400">Decryption:</span></p>
+  <p class="italic text-right text-lg mb-2">plaintext = (13<sup>7</sup>) % 33</p>
+  <p>You got the original number back: <code class="bg-gray-800 px-2 py-1 rounded">7</code>.</p>
+</div>
+
+<!-- ✅ Real-World Usage -->
+<div class=" text-white p-6 rounded-lg mt-6 shadow-md">
+  <p class="text-lg font-semibold mb-4">✅ <span class="underline">Real-World Usage:</span></p>
+  <ul class="list-disc list-inside space-y-1">
+    <li>RSA is used in <strong>HTTPS websites</strong></li>
+    <li>In <strong>digital signatures</strong></li>
+    <li>For <strong>secure email and messaging</strong></li>
+    <li>In <strong>blockchain and cryptocurrency</strong></li>
+  </ul>
+</div>
+<!-- 🔒 Why RSA is Powerful -->
+<div class="text-white p-6 rounded-lg mt-6 shadow-md">
+  <p class="text-lg font-semibold mb-4 flex items-center gap-2">
+    <span>🔒</span> Why RSA is Powerful:
+  </p>
+  <ul class="list-disc list-inside space-y-1">
+    <li>Super secure (if large primes are used)</li>
+    <li>Public key can be shared with anyone</li>
+    <li>Private key stays secret</li>
+  </ul>
+</div>
+  </div>
+</section>
+
+<footer class="bg-black text-white px-6 py-8 mt-18">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 gap-10 text-center">
+
+   <div class="flex flex-col items-center justify-center gap-4">
+  
+  <!-- Horizontal logo row -->
+ <div class="flex items-center justify-center gap-4">
+  <img src="images/Logo1.png" alt="Twelve Studio Logo" class="h-40 w-auto m-4 object-contain">
+  <img src="images/logo.png" alt="Twelve Studio Logo" class="h-40 w-auto object-contain">
+</div>
+
+
+  <!-- Description below logos -->
+  <p class="text-sm text-gray-400 max-w-xs mb-10 text-center">
+    Twelve Studio: Creative design, visual storytelling, and encryption interfaces for the modern web.
+  </p>
+</div>
+  </div>
+
+  <!-- 🌐 Social Icons -->
+  <!-- 🖋 Watermark -->
+  <div class="mt-6 text-xs text-center text-gray-600">
+    © 2025 <span class="font-semibold">HENGlAY</span>. All rights reserved.
+  </div>
+</footer>
+
+
+<script>
+  const page = document.getElementById('page-transition');
+
+  window.addEventListener('load', () => {
+    page.classList.add('loaded');
+  });
+
+  document.querySelectorAll('a[href]').forEach(link => {
+    link.addEventListener('click', function (e) {
+      const target = this.getAttribute('href');
+      if (target.startsWith('#')) return;
+
+      e.preventDefault();
+      page.classList.remove('loaded');
+      page.classList.add('exit');
+
+      setTimeout(() => {
+        window.location.href = target;
+      }, 600);
+    });
+  });
+</script>
+</body>
+</html>
