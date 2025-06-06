@@ -86,11 +86,20 @@ function encryptRSA() {
 }
 
 function decryptRSA() {
-  let encrypted = document.getElementById("rsaResult").textContent.split(' ');
-  let decrypted = encrypted.map(num =>
-    String.fromCharCode(Math.pow(parseInt(num), rsa.d) % rsa.n)
-  ).join('');
-  document.getElementById("rsaResult").textContent = decrypted;
+  const input = document.getElementById('rsaInput').value.trim();
+  const encryptedNumbers = input.split(" ").map(Number);
+  const resultArea = document.getElementById("rsaResult");
+
+  const d = 7n;  // Replace with actual private exponent
+  const n = 33n; // Replace with actual n
+
+  const decryptedChars = encryptedNumbers.map(num => {
+    let decrypted = BigInt(num) ** d % n;
+    let code = Number(decrypted);
+    return code >= 32 && code <= 126 ? String.fromCharCode(code) : '?';
+  });
+
+  resultArea.textContent = decryptedChars.join("");
 }
 function clearRSA() {
   document.getElementById("rsaInput").value = "";

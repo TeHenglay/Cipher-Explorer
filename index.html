@@ -270,8 +270,10 @@
 <script>
   const page = document.getElementById('page-transition');
 
-  window.addEventListener('load', () => {
-    page.classList.add('loaded');
+  document.addEventListener('DOMContentLoaded', () => {
+    requestAnimationFrame(() => {
+      page.classList.add('loaded');
+    });
   });
 
   document.querySelectorAll('a[href]').forEach(link => {
@@ -289,5 +291,6 @@
     });
   });
 </script>
+
 </body>
 </html>
