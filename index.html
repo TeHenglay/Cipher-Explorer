@@ -195,15 +195,31 @@
   </ul>
   <p class="text-base leading-relaxed">They created RSA in 1977.</p>
 </div>
-<!-- ✅ Example (Simplified) -->
+<!-- Replace your RSA example section with this: -->
 <div class="bg-gray-900 text-white p-6 rounded-lg mt-10 shadow-md">
-  <p class="text-lg font-semibold mb-4">✅ <span class="underline">Example (Simplified)</span></p>
+  <p class="text-lg font-semibold mb-4">✅ <span class="underline">RSA Step-by-Step Example</span></p>
 
-  <p class="mb-3">Let’s encrypt the number <strong>7</strong> using:</p>
+  <p class="mb-3">Let's use the same example as your textbook:</p>
+  
+  <p class="font-semibold mb-2">🔑 <span class="text-blue-400">Key Generation:</span></p>
   <ul class="list-disc list-inside mb-4">
-    <li><strong>Public Key</strong> (e = 3, n = 33)</li>
-    <li><strong>Private Key</strong> (d = 7, n = 33)</li>
+    <li>Choose primes: p = 43, q = 59</li>
+    <li>Calculate n = p × q = 43 × 59 = 2537</li>
+    <li>Calculate φ(n) = (p-1)(q-1) = 42 × 58 = 2436</li>
+    <li>Choose e = 13 (must be coprime with φ(n))</li>
+    <li>Calculate d = 937 (the inverse of e)</li>
   </ul>
+
+  <p class="font-semibold mb-2">🔐 <span class="text-yellow-400">Encryption (STOP → [2081, 2182]):</span></p>
+  <ul class="list-disc list-inside mb-4">
+    <li>Convert: S=18, T=19, O=14, P=15</li>
+    <li>Group: 1819, 1415</li>
+    <li>Encrypt: 1819^13 mod 2537 = 2081</li>
+    <li>Encrypt: 1415^13 mod 2537 = 2182</li>
+  </ul>
+
+  <p class="mb-2">This matches your calculator's textbook example!</p>
+</div>
 
   <!-- Encryption -->
   <p class="font-semibold mb-2">🔐 <span class="text-yellow-400">Encryption:</span></p>
